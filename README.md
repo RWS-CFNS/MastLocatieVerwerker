@@ -36,7 +36,7 @@
   <h3 align="center">MastLocatieVerwerker</h3>
 
   <p align="center">
-    Haalt de locatie van de verbonden masten op bij OpenCellID
+    Retrieves the location of the connected towers from OpenCellID
     <br />
     <a href="https://github.com/RWS-CFNS/MastLocatieVerwerker"><strong>Explore the docs »</strong></a>
     <br />
