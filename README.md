@@ -83,14 +83,14 @@
 ## System Architecture Overview
 ![Integration with other CFNS systems](integrationMastLocatieVerwerker.png)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This application automates the process of retrieving and updating cell tower locations using the OpenCellID API and a PostgreSQL database. It scans the database for records with missing latitude and longitude values, extracts the necessary network identifiers (MCC, MNC, LAC/TAC, and Cell ID), and queries OpenCellID for their precise geolocation. Once retrieved, the coordinates are stored back in the database, ensuring accurate mapping of network infrastructure.
+Key Features:
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+* Database Connectivity: Seamlessly connects to a PostgreSQL database to identify and update missing cell tower locations.
+* API Integration: Uses the OpenCellID API to fetch precise geolocation data based on network identifiers.
+* Automated Data Processing: Ensures accuracy by verifying API responses before updating records, improving the quality of network analysis.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+This app is particularly useful for telecom companies, network analysts, and researchers looking to enhance cellular coverage data and infrastructure mapping.
 
 Use the `BLANK_README.md` to get started.
 
