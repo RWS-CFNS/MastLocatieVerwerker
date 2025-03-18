@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/RWS-CFNS/MastLocatieVerwerker">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/MastVerwerkerLogo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">MastLocatieVerwerker</h3>
@@ -81,7 +81,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## System Architecture Overview
-![Integration with other CFNS systems](integrationMastLocatieVerwerker.png)
+![Integration with other CFNS systems](images/integrationMastLocatieVerwerker.png)
 
 This application automates the process of retrieving and updating cell tower locations using the OpenCellID API and a PostgreSQL database. It scans the database for records with missing latitude and longitude values, extracts the necessary network identifiers (MCC, MNC, LAC/TAC, and Cell ID), and queries OpenCellID for their precise geolocation. Once retrieved, the coordinates are stored back in the database, ensuring accurate mapping of network infrastructure.
 Key Features:
